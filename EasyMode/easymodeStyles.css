@@ -1,0 +1,51 @@
+.hero-text{
+    color: rgb(75, 75, 75);
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 2%;
+    font-family: 'Comic Neue', 'Times New Roman', Times, serif;
+}
+
+input{
+    border: 0px solid whitesmoke;
+    color: rgb(75, 75, 75);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 35px;
+    width: 150px;
+    height: 70px;
+    padding-right: 1%;
+    padding-left: 1%;
+    margin-left: 45%;
+    margin-top: 3%;
+    box-shadow: 1px 5px 1px 5px rgb(230, 230, 230);
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 1px 5px 1px 5px rgb(94, 93, 93);
+    transition-duration: 0.5s;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#check{
+    width: 110px;
+    height: 60px;
+    margin-left: 47%;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+.guessingGrid{
+    display: grid;
+    grid-template: 400px 400px 400px/400px 400px 400px;
+    margin-left: 19%;
+
+}
