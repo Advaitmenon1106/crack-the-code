@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Mode</title>
     <link rel="stylesheet" href="easymodeStyles.css">
+    <script src="easymodeScript.js" defer></script>
 </head>
 <body>
     <div class="hero-text">
@@ -12,7 +13,11 @@
         <input type="number" id="input">
         <button id="check">Check</button>
     </div>
-    <div class="guessingGrid"></div>
+    <div class="guessingGrid" id="guessingGrid"></div>
+        <div class="toastMsgContent" id="toast">
+            <div class="toastMsgBand">Warning!</div>
+            <div class="message" id="message">Enter a valid number!</div>
+        </div>
     
 </body>
 </html>
