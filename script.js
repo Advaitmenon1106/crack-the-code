@@ -27,9 +27,9 @@ for (let i = 0; i<diff.length; i++){
 }
 
 diff[0].addEventListener('click', ()=>{
-    window.open('../EasyMode/easymode.html')
+    window.open('./EasyMode/easymode.html')
 })
 
 diff[1].addEventListener('click', ()=>{
-    window.open('../MediumMode/mediummode.html')
+    window.open('./MediumMode/mediummode.html')
 })
