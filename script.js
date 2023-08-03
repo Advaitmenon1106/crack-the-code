@@ -1,4 +1,16 @@
 let diff = document.getElementsByClassName('difficulty-levels');
+let descBox = document.getElementById('descBox');
+descBox.style.cssText = 
+`
+font-size : 30px;
+width: 600px;
+font-family: 'Comic Neue', serif;
+text-align: center;
+margin-top: 5%;
+margin-left: 35%;
+background-color: #DEDEDE;
+border-radius: 5px;
+`
 
 for (let i = 0; i<diff.length; i++){
     diff[i].addEventListener('mouseover', ()=>{
@@ -25,6 +37,27 @@ for (let i = 0; i<diff.length; i++){
         })
     })
 }
+
+diff[0].addEventListener('mouseenter', ()=>{
+    descBox.innerHTML= "Play a guessing game where you guess one number, with 9 chances in all.";
+    diff[0].addEventListener('mouseleave', ()=>{
+        descBox.innerHTML= '';
+    })
+})
+
+diff[1].addEventListener('mouseenter', ()=>{
+    descBox.innerHTML= "Play a guessing game where you guess one number, with 6 chances in all.";
+    diff[1].addEventListener('mouseleave', ()=>{
+        descBox.innerHTML= '';
+    })
+})
+
+diff[2].addEventListener('mouseenter', ()=>{
+    descBox.innerHTML= "[Work in Progress] Play a guessing game where you guess two numbers, with 12 chances in all.";
+    diff[2].addEventListener('mouseleave', ()=>{
+        descBox.innerHTML= '';
+    })
+})
 
 diff[0].addEventListener('click', ()=>{
     window.open('./EasyMode/easymode.html')
