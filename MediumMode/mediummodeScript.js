@@ -53,11 +53,11 @@ const checkGuess = ()=>{
         warningToast.className +=' show';
         setTimeout(() => {
             warningToast.className = warningToast.className.replace(' show', '');
+            window.location.reload();
         }, 3000);
-        window.location.reload();
     }
 
-    else if (counter==9){
+    else if (counter==6){
         warningMessage.innerHTML = 'Exceeded 6 hints. Game over!'
         warningToast.className +=' show';
         setTimeout(() => {
